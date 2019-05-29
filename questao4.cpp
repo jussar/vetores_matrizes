@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <conio.h>
-int mata[3][2];
-int matb[2][3];
-int matc[3][3];
+float mata[3][2];
+float matb[2][3];
+float matc[3][3];
 
 void produto(){
 	int l,c;
@@ -10,28 +10,28 @@ void produto(){
 	for(l=0;l<3;l++){
 		for(c=0;c<2;c++){
 			printf("digite um numero:");
-			scanf("%d",&mata[l][c]);
+			scanf("%f",&mata[l][c]);
 		}
 	}
 	printf("mat B\n");
 	for(l=0;l<2;l++){
 		for(c=0;c<3;c++){
 			printf("digite um numero:");
-			scanf("%d",&matb[l][c]);
+			scanf("%f",&matb[l][c]);
 		}
 	}
 	printf("\n\n====================mat a =========================\n");
 	for(l=0;l<3;l++){
 		printf("\n");
 		for(c=0;c<2;c++){
-			printf("%d ",mata[l][c]);
+			printf("%f ",mata[l][c]);
 		}
 	}
 	printf("\n\n====================mat b =========================\n");
 	for(l=0;l<2;l++){
 		printf("\n");
 		for(c=0;c<3;c++){
-			printf("%d ",matb[l][c]);
+			printf("%f ",matb[l][c]);
 		}
 	}
 	
@@ -52,7 +52,7 @@ void produto(){
 	for(l=0;l<3;l++){
 		printf("\n");
 		for(c=0;c<3;c++){
-			printf("%d ",matc[l][c]);
+			printf("%.2f ",matc[l][c]);
 		}
 	}
 }
