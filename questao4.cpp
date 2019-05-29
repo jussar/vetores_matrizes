@@ -49,7 +49,7 @@ void produto(){
 		produto =0;
 		}
 	}
-	for(l=0;l<2;l++){
+	for(l=0;l<3;l++){
 		printf("\n");
 		for(c=0;c<3;c++){
 			printf("%d ",matc[l][c]);
